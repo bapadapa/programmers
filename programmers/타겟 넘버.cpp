@@ -24,7 +24,6 @@ int solution(vector<int> numbers, int target) {
 		if (num == target)
 			answer++;
 
-
 	return answer;
 }
 
