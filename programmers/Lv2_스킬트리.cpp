@@ -43,6 +43,7 @@ BDA: B 스킬을 배우기 전에 C 스킬을 먼저 배워야 합니다. 불가능한 스킬트리입니다.
 #include <string>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 
 bool cmp(const pair<int, int>& a, const pair<int, int>& b) {
@@ -51,6 +52,7 @@ bool cmp(const pair<int, int>& a, const pair<int, int>& b) {
 
 int solution(string skill, vector<string> skill_trees) {
     int answer = 0;  
+
     for (auto teckTree : skill_trees) {        
         int preSkill = 0;
         bool _isPossible = true;
